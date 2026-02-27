@@ -171,31 +171,105 @@ body {
     transition: 0.3s;
 }
 
+/* Container Utama */
 .hero-image {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    perspective: 1000px; /* Memberikan efek 3D saat hover */
 }
-.image-bg-card:hover {
-    transform: translateY(4px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    
-}
+
+/* Card Profile */
 .image-bg-card {
     width: 100%;
     max-width: 400px;
     background: var(--card-bg);
     border-radius: 20px;
     box-shadow: var(--shadow);
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    animation: floating 6s ease-in-out infinite; /* Efek melayang pelan */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Border tipis agar terlihat premium */
 }
 
+/* Efek Glow di belakang card */
+.image-bg-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    opacity: 0.1;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+/* Gambar Profile */
 .image-bg-card img {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 1;
     border-radius: 0 0 20px 20px;
+    filter: grayscale(20%); /* Sedikit elegan */
+    transition: 0.5s ease;
 }
 
+/* --- INTERAKSI HOVER --- */
+
+.image-bg-card:hover {
+    transform: rotateY(-10deg) rotateX(5deg) translateY(-10px); /* Efek Tilt 3D */
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.2);
+}
+
+.image-bg-card:hover img {
+    filter: grayscale(0%); /* Warna kembali penuh saat hover */
+    transform: scale(1.05); /* Gambar sedikit zoom */
+}
+
+.image-bg-card:hover::before {
+    opacity: 0.2; /* Glow lebih terang saat hover */
+}
+
+/* Animasi Melayang */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 900px) {
+    .hero-image {
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .image-bg-card {
+        max-width: 300px;
+    }
+}
+
+
+.btn-about {
+    margin-bottom: 20px;
+    margin-top: -15px;
+    padding: 15px 25px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn-about:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: darken(var(--primary-color), 10%);
+}
 /* 4. PROJECTS & SECTIONS */
 .section { padding: 80px 8%; }
 .section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; }
@@ -208,12 +282,12 @@ body {
 
 .project-card {
     background: var(--card-bg);
-    border-radius: 24px; /* Lebih bulat agar modern */
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    padding: 0; /* Reset padding agar gambar nempel ke atas */
+    padding: 0;
 }
 
 .project-img {
