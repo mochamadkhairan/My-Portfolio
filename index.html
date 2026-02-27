@@ -32,8 +32,8 @@
             <div class="hero-content">
                 <p class="welcome-text">WELCOME TO MY WORLD</p>
                 <h1>Hi, I’m <span class="highlight">Khay</span><br>
-                    a Junior <span class="highlight">Software</span><br>
-                    <span class="sub-text">Developer.</span>
+                    a <span class="highlight" id="typing-text">Software Developer</span><br>
+                    <span class="sub-text">Based in Indonesia.</span>
                 </h1>
                 <p class="description">
                     Membangun pengalaman digital yang fungsional dan estetis. 
@@ -72,24 +72,24 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-img"></div>
+                <div class="project-img"><img src="aset/home-absensi.png" alt="Absensi System"></div>
                 <div class="project-info">
-                    <h3>Project Name</h3>
+                    <h3>Project Absensi</h3>
                     <p>Web Design & Development</p>
                 </div>
             </div>
              <div class="project-card">
-                <div class="project-img"></div>
+                <div class="project-img"><img src="aset/home-pickitup.png" alt="Guitar Learn Web"></div>
                 <div class="project-info">
-                    <h3>Project Name</h3>
+                    <h3>Project Pick It Up</h3>
                     <p>Web Design & Development</p>
                 </div>
             </div>
              <div class="project-card">
-                <div class="project-img"></div>
+                <div class="project-img"><img src="aset/home-tuturaja.png" alt="Website Tuturaja"></div>
                 <div class="project-info">
-                    <h3>Project Name</h3>
-                    <p>Web Design & Development</p>
+                    <h3>Tutur Aja App</h3>
+                    <p>Mobile Apps</p>
                 </div>
             </div>
         </div>
@@ -161,6 +161,44 @@ toggleBtn.addEventListener('click', () => {
         toggleBtn.textContent = '☀️ Light Mode';
     }
 });
+
+const textElement = document.getElementById("typing-text");
+const words = ["Web Developer.", "Fullstack Developer.", "Software Developer.", "UI/UX Designer."];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 150;
+
+function type() {
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+        // Menghapus teks
+        textElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 70;
+    } else {
+        // Mengetik teks
+        textElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 150;
+    }
+
+    // Jika kata selesai diketik
+    if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Jeda saat kata lengkap
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 500;
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+// Mulai animasi
+document.addEventListener("DOMContentLoaded", type);
 </script>
 </body>
 </html>
