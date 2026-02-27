@@ -187,16 +187,52 @@ body {
 
 .project-card {
     background: var(--card-bg);
-    border-radius: 20px;
+    border-radius: 24px; /* Lebih bulat agar modern */
     overflow: hidden;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
-    transition: 0.3s;
-    padding: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 0; /* Reset padding agar gambar nempel ke atas */
 }
+
+.project-img {
+    height: 220px;
+    background: linear-gradient(45deg, var(--primary-color), #66b2ff);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efek hiasan di dalam gambar project */
+.project-img::after {
+    content: "VIEW PROJECT";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project-card:hover .project-img::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.project-info { 
+    padding: 25px; 
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 /* 5. CONTACT FORM */
 .contact-container {
@@ -297,15 +333,45 @@ body {
 }
 
 .hobbies-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 8%;
 }
 
 .hobby-card {
     background: var(--card-bg);
-    border-radius: 20px;
-    padding: 20px;
-    width: auto;
+    border-radius: 24px;
+    padding: 40px 30px;
+    text-align: center;
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.hobby-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.hobby-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.hobby-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.hobby-card:hover {
+    background: var(--primary-color);
+}
+
+.hobby-card:hover i, 
+.hobby-card:hover h3, 
+.hobby-card:hover p {
+    color: white;
 }
