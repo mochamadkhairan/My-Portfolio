@@ -1083,3 +1083,43 @@ body {
         height: 40px;
     }
 }
+
+/* Sembunyikan project lebih dari 3 */
+.hidden-project {
+    display: none !important;
+}
+
+.show-more-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-show-more {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s all ease;
+}
+
+.btn-show-more:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 92, 158, 0.3);
+    transform: translateY(-3px);
+}
+
+.btn-show-more i {
+    transition: transform 0.3s ease;
+}
+
+/* Animasi saat icon berputar (ketika di-toggle) */
+.btn-show-more.active i {
+    transform: rotate(180deg);
+}

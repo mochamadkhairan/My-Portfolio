@@ -77,7 +77,7 @@
 
     <section id="projects" class="section">
         <h2 class="section-title reveal" id="title-portfolio">My <span class="highlight">Portfolio</span></h2>
-        <div class="project-grid">
+        <div class="project-grid" id="projectGrid">
             <div class="project-card reveal" onclick="openLightbox('Project Absensi', ['aset/home-absensi.png', 'aset/absensi-detail.png', 'aset/absensi-detail1.png', 'aset/absensi-detail2.png'])">
                 <div class="project-img">
                     <img src="aset/home-absensi.png" alt="Absensi System">
@@ -118,6 +118,26 @@
                     <p>Tutur Aja is a mobile application built with Flutter that allows users to easily report complaints, issues, and suggestions to the relevant authorities.</p>
                 </div>
             </div>
+            <div class="project-card reveal" onclick="openLightbox('Bandung Creative HUB Website', ['aset/home-bch.png', 'aset/about-bch.png', 'aset/artikel-bch.png', 'aset/dashboard-admin.png'])">
+                <div class="project-img">
+                    <img src="aset/home-bch.png" alt="Bandung Creative HUB Website">
+                    <div class="project-overlay">
+                        <span class="view-btn"><i class="fas fa-search-plus"></i></span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span>Laravel</span><span>MySQL</span><span>TailWindCSS</span></div>
+                    <h3>Bandung Creative HUB Website</h3>
+                    <p>BCH Website is a web-based platform designed to manage facilities and spaces at Bandung Creative Hub, allowing users to explore available rooms and administrators to manage bookings and facility data through an integrated dashboard.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="show-more-container reveal">
+            <button id="btnShowMore" class="btn-show-more">
+                <span id="textShowMore">Show More</span>
+                <i class="fas fa-chevron-down" id="iconShowMore"></i>
+            </button>
         </div>
     </section>
     <div id="lightbox" class="lightbox">
@@ -443,7 +463,7 @@ function scrollToAnchor(id) {
 }
 
 const langToggle = document.getElementById("lang-toggle");
-let currentLang = "en"; // Set default ke English sesuai HTML kamu
+let currentLang = "en";
 
 const translations = {
     "welcome-text": { id: "SELAMAT DATANG DI DUNIA SAYA", en: "WELCOME TO MY WORLD" },
@@ -474,7 +494,6 @@ langToggle.addEventListener("click", () => {
     });
 
     // 2. Update Elemen Konten (Gunakan class sebagai penanda)
-    // Contoh: <p class="welcome-text">...</p>
     Object.keys(translations).forEach(key => {
         const elements = document.querySelectorAll(`.${key}`);
         elements.forEach(el => {
@@ -482,8 +501,50 @@ langToggle.addEventListener("click", () => {
         });
     });
 
-    // Simpan preferensi ke Local Storage (Opsional tapi bagus)
+    // Simpan preferensi ke Local Storage
     localStorage.setItem("preferred-lang", currentLang);
+});
+
+// Hide project cards beyond the first 3 by adding the helper class
+const projectGrid = document.querySelector('.project-grid');
+if (projectGrid) {
+    const projects = Array.from(projectGrid.querySelectorAll('.project-card'));
+    const initialVisible = 3;
+    projects.forEach((p, i) => {
+        if (i >= initialVisible) p.classList.add('hidden-project');
+    });
+}
+
+const btnShowMore = document.getElementById('btnShowMore');
+const hiddenProjects = document.querySelectorAll('.hidden-project');
+const textShowMore = document.getElementById('textShowMore');
+const iconShowMore = document.getElementById('iconShowMore');
+
+let isExpanded = false;
+
+btnShowMore.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+
+    hiddenProjects.forEach(project => {
+        if (isExpanded) {
+            project.classList.remove('hidden-project');
+            // Sedikit delay agar animasi munculnya halus
+            setTimeout(() => project.style.opacity = '1', 10);
+        } else {
+            project.classList.add('hidden-project');
+        }
+    });
+
+    // Update Teks & Icon
+    if (isExpanded) {
+        textShowMore.innerText = "Show Less";
+        btnShowMore.classList.add('active');
+    } else {
+        textShowMore.innerText = "Show More";
+        btnShowMore.classList.remove('active');
+        // Scroll kembali ke atas grid project jika ditutup
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    }
 });
 </script>
 </body>
