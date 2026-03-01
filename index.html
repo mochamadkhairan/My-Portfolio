@@ -23,7 +23,7 @@
             <a href="#home" data-en="Home" data-id="Beranda">Home</a>
             <a href="#projects" data-en="Projects" data-id="Proyek">Projects</a>
             <a href="#contact" data-en="Contact" data-id="Kontak">Contact</a>
-            <a href="#hobbies" data-en="Hobbies" data-id="Hobi">Hobbies</a>
+            <a href="#life" data-en="Hobbies" data-id="Hobi">Hobbies</a>
             
             <div class="nav-controls">
                 <button id="lang-toggle" class="control-btn">ID</button>
@@ -241,29 +241,152 @@
         </div>
     </section>
 
-    <section id="hobbies" class="section">
-        <h2 class="section-title reveal" id="title-hobbies">Hobbies & <span class="highlight">Interests</span></h2>
-        <div class="hobbies-container">
-            <div class="hobby-card reveal">
-                <div class="hobby-icon">
-                    <i class="fas fa-camera"></i>
+    <section id="certificates" class="section">
+        <h2 class="section-title reveal" id="title-certs">My <span class="highlight">Achievements</span></h2>
+        <p class="section-subtitle reveal lang-certs-desc" style="text-align: center; margin-bottom: 80px;">Professional certifications and recognitions I've earned.</p>
+
+        <div class="cert-canvas-container reveal">
+            <div class="cert-canvas" id="certCanvas">
+                
+                <div class="cert-glass-item cert-item-1" onclick="openLightbox('Laravel Kompetensi', ['aset/logo-khay.jpg'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/logo-khay.jpg" alt="Laravel Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-code"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">Development</span>
+                        <h3>Laravel Web Expert</h3>
+                        <p class="cert-date">Date Issued: <b>Oct 2025</b></p>
+                        <p class="cert-issuer">Issued by: <b>Dicoding</b></p>
+                    </div>
                 </div>
-                <h3>Photography & Editing</h3>
-                <p>Capturing moments and creating visual stories through the lens.</p>
+
+                <div class="cert-glass-item cert-item-2" onclick="openLightbox('Mobile Expert', ['aset/cert-flutter.png'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/cert-flutter.png" alt="Flutter Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">Mobile</span>
+                        <h3>Flutter Deep Dive</h3>
+                        <p class="cert-date">Date Issued: <b>Jan 2026</b></p>
+                        <p class="cert-issuer">Issued by: <b>Angga</b></p>
+                    </div>
+                </div>
+
+                <div class="cert-glass-item cert-item-3" onclick="openLightbox('UI/UX Design', ['aset/cert-uiux.png'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/cert-uiux.png" alt="UI/UX Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-paint-brush"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">Design</span>
+                        <h3>UI/UX Masterclass</h3>
+                        <p class="cert-date">Date Issued: <b>Dec 2025</b></p>
+                        <p class="cert-issuer">Issued by: <b>Google</b></p>
+                    </div>
+                </div>
+
+                <div class="cert-glass-item cert-item-4 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/cert-baru.png'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/cert-baru.png" alt="Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">New Category</span>
+                        <h3>Judul Sertifikat 4</h3>
+                        <p class="cert-date">Date Issued: <b>Feb 2026</b></p>
+                        <p class="cert-issuer">Issued by: <b>Platform</b></p>
+                    </div>
+                </div>
+
+                <div class="cert-glass-item cert-item-5 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/cert-baru.png'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/cert-baru.png" alt="Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">New Category</span>
+                        <h3>Judul Sertifikat 5</h3>
+                        <p class="cert-date">Date Issued: <b>Feb 2026</b></p>
+                        <p class="cert-issuer">Issued by: <b>Platform</b></p>
+                    </div>
+                </div>
+
+                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/cert-baru.png'])">
+                    <div class="cert-glass-paper">
+                        <img src="aset/cert-baru.png" alt="Certificate">
+                        <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
+                    </div>
+                    <div class="cert-unfold-info">
+                        <span class="cert-tag">New Category</span>
+                        <h3>Judul Sertifikat 6</h3>
+                        <p class="cert-date">Date Issued: <b>Feb 2026</b></p>
+                        <p class="cert-issuer">Issued by: <b>Platform</b></p>
+                    </div>
+                </div>
+
             </div>
-            <div class="hobby-card reveal">
-                <div class="hobby-icon">
-                    <i class="fas fa-guitar"></i>
+        </div>
+        <div class="cert-show-more-container">
+            <button id="btnShowMoreCert" class="btn-show-more">
+                <span id="textShowMoreCert">Show More</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="life" class="section">
+        <h2 class="section-title reveal" id="title-life">Life Beyond <span class="highlight">Coding</span></h2>
+        <p class="section-subtitle reveal lang-life-desc" style="text-align: center; margin-bottom: 40px;">Hover the cards to explore my story.</p>
+
+        <div class="interactive-hobbies-grid">
+            <div class="experience-card reveal" data-tilt onclick="openLightbox('Band Experience', ['aset/band1.JPG', 'aset/band2.JPG', 'aset/band3.JPG','aset/band4.JPG'])">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-guitar"></i></div>
+                    <div class="card-details">
+                        <span class="activity-tag">Performer</span>
+                        <h3>Music & Stage</h3>
+                        <p>Active guitarist. 5+ stage performances and music production enthusiast.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Click to see gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
-                <h3>Playing Guitar</h3>
-                <p>Expressing creativity through strings and melodies.</p>
+                <div class="card-spotlight"></div>
             </div>
-            <div class="hobby-card reveal">
-                <div class="hobby-icon">
-                    <i class="fas fa-code"></i>
+
+            <div class="experience-card reveal" data-tilt onclick="openLightbox('Photography Gallery', ['aset/photo1.png', 'aset/photo2.png'])">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-camera"></i></div>
+                    <div class="card-details">
+                        <span class="activity-tag">Creator</span>
+                        <h3>Visual Storytelling</h3>
+                        <p>Capturing life through lenses. Experience in event documentation and editing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Explore works</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
-                <h3>Open Source</h3>
-                <p>Contributing to the community and exploring new tech stacks.</p>
+                <div class="card-spotlight"></div>
+            </div>
+
+            <div class="experience-card reveal" data-tilt onclick="openLightbox('Organization', ['aset/org.JPG', 'aset/org2.jpg', 'aset/org3.jpg', 'aset/org4.jpg'])">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <div class="card-details">
+                        <span class="activity-tag">Leader</span>
+                        <h3>Organization</h3>
+                        <p>Leading tech communities and organizing campus workshops.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>View activities</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="card-spotlight"></div>
             </div>
         </div>
     </section>
@@ -342,7 +465,7 @@
             <div class="footer-socials">
                 <a href="https://www.instagram.com//m.khairan22" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/khairan-mochamad-150117371" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/CERULEDGE-4Khay" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/mochamadkhairan" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
@@ -524,7 +647,10 @@ const translations = {
     "lang-skill-cat1": { id: "Bahasa Pemrograman", en: "Programming Languages" },
     "lang-skill-cat2": { id: "Framework & Perpustakaan", en: "Frameworks & Libraries" },
     "lang-skill-cat3": { id: "Basis Data & Alat", en: "Databases & Tools" },
-    "textShowMore": { id: "Tampilkan Lebih Banyak", en: "Show More" }
+    "textShowMore": { id: "Tampilkan Lebih Banyak", en: "Show More" },
+    "title-certs": { id: "Prestasi & <span class='highlight'>Sertifikat</span>", en: "Achievements & <span class='highlight'>Certificates</span>" },
+    "lang-certs-desc": { id: "Sertifikasi profesional dan penghargaan yang telah saya raih.", en: "Professional certifications and recognitions I've earned." },
+    "lang-life-desc": { id: "Hover kartu untuk menjelajahi cerita saya.", en: "Hover the cards to explore my story." }
 };
 
 langToggle.addEventListener("click", () => {
@@ -591,6 +717,53 @@ btnShowMore.addEventListener('click', () => {
         btnShowMore.classList.remove('active');
         // Scroll kembali ke atas grid project jika ditutup
         document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+// Efek Spotlight & Hover 3D
+const cards = document.querySelectorAll('.experience-card');
+
+cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        // Logika Spotlight
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+
+        // Logika Tilt 3D Ringan
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
+    });
+});
+
+const btnShowMoreCert = document.getElementById('btnShowMoreCert');
+const certCanvas = document.getElementById('certCanvas');
+const textShowMoreCert = document.getElementById('textShowMoreCert');
+
+btnShowMoreCert.addEventListener('click', () => {
+    certCanvas.classList.toggle('show-all-certs');
+    
+    // Update teks tombol
+    if (certCanvas.classList.contains('show-all-certs')) {
+        textShowMoreCert.innerText = "Show Less";
+        btnShowMoreCert.querySelector('i').style.transform = "rotate(180deg)";
+    } else {
+        textShowMoreCert.innerText = "Show More";
+        btnShowMoreCert.querySelector('i').style.transform = "rotate(0deg)";
+        
+        // Scroll balik ke judul sertifikat agar tidak tersesat
+        document.getElementById('certificates').scrollIntoView({ behavior: 'smooth' });
     }
 });
 </script>
