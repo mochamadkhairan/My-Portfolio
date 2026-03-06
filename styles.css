@@ -629,7 +629,7 @@ body {
     margin-top: 8px;
     padding: 6px 15px;
     background: #25d366;
-    color: white !important; /* Paksa warna putih */
+    color: white !important;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -639,7 +639,7 @@ body {
 
 .wa-action-btn i {
     font-size: 12px;
-    background: transparent !important; /* Hilangkan background bulat icon default */
+    background: transparent !important;
     color: white !important;
     width: auto !important;
     height: auto !important;
@@ -772,7 +772,7 @@ body {
 
 @media (max-width: 992px) {
     .hero-container {
-        flex-direction: column-reverse; /* Gambar di atas, teks di bawah */
+        flex-direction: column-reverse;
         text-align: center;
     }
     .hero-content h1 { font-size: 2.8rem; }
@@ -1213,12 +1213,10 @@ body {
 .hidden-project {
     display: none !important;
 }
-
 .show-more-container {
     text-align: center;
     margin-top: 40px;
 }
-
 .btn-show-more {
     background: transparent;
     color: var(--primary-color);
@@ -1232,19 +1230,15 @@ body {
     gap: 10px;
     transition: 0.3s all ease;
 }
-
 .btn-show-more:hover {
     background: var(--primary-color);
     color: white;
     box-shadow: 0 10px 20px rgba(0, 92, 158, 0.3);
     transform: translateY(-3px);
 }
-
 .btn-show-more i {
     transition: transform 0.3s ease;
 }
-
-/* Animasi saat icon berputar (ketika di-toggle) */
 .btn-show-more.active i {
     transform: rotate(180deg);
 }
@@ -1327,14 +1321,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 0; /* Ruang lebih untuk mekar dan info bawah */
+    padding: 120px 0;
     position: relative;
     overflow: hidden;
 }
 
 .cert-canvas {
     position: relative;
-    width: 320px; /* Lebar tumpukan awal */
+    width: 320px;
     height: 450px;
     display: flex;
     justify-content: center;
@@ -1356,12 +1350,12 @@ body {
 .cert-glass-paper {
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.03); /* Dasar transparan */
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Border halus */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
@@ -1375,7 +1369,7 @@ body {
     border-radius: 10px;
 }
 
-/* Ikon Badge: Bulat Halus */
+/* Ikon Badge */
 .cert-glass-badge {
     position: absolute;
     top: 20px;
@@ -1392,14 +1386,14 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Info Popup: Glassmorphism Juga */
+/* Info Popup */
 .cert-unfold-info {
     position: absolute;
-    bottom: -100px; /* Lebih dalam di awal */
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%) scale(0.9);
     width: 90%;
-    background: rgba(var(--secondary-bg-rgb), 0.2); /* Warna background card dengan transparansi */
+    background: rgba(var(--secondary-bg-rgb), 0.2);
     backdrop-filter: blur(8px);
     padding: 20px;
     border-radius: 15px;
@@ -1443,7 +1437,6 @@ body {
 /* --- LOGIKA TUMPANGAN AWAL --- */
 .cert-glass-item {
     position: absolute;
-    /* Semua sertifikat numpuk di tengah dulu */
     left: 50%;
     transform: translateX(-50%); 
     width: 300px;
@@ -1451,30 +1444,28 @@ body {
     transition: all 1s cubic-bezier(0.25, 1, 0.35, 1);
 }
 
-/* Beri sedikit rotasi acak agar terlihat natural seperti tumpukan kertas asli */
+
 .cert-item-1 { transform: translateX(-50%) rotate(-5deg); z-index: 5; }
 .cert-item-2 { transform: translateX(-50%) rotate(3deg) translate(10px, 10px); z-index: 4; }
 .cert-item-3 { transform: translateX(-50%) rotate(-2deg) translate(-5px, 15px); z-index: 3; }
 .cert-item-4 { transform: translateX(-50%) rotate(6deg) translate(5px, 20px); z-index: 2; }
-/* Jika ada lebih dari 4, tambahkan seterusnya atau biarkan default */
+
 
 /* --- HOVER EFFECT: DINAMIS & OTOMATIS --- */
 .cert-canvas-container:hover .cert-canvas {
-    /* Gunakan Flexbox agar otomatis berjejer */
     display: flex;
-    flex-wrap: wrap; /* Supaya kalau kebanyakan, dia turun ke bawah (baris baru) */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Jarak antar sertifikat saat mekar */
-    width: 90%; /* Lebar area mekar */
+    gap: 40px; 
+    width: 90%;
     height: auto;
 }
 
 .cert-canvas-container:hover .cert-glass-item {
-    /* Reset posisi absolute saat hover */
     position: relative;
     left: auto;
     transform: translateX(0) rotate(0deg) !important;
-    margin-bottom: 100px; /* Ruang untuk info popup di bawahnya */
+    margin-bottom: 100px;
 }
 
 .cert-canvas-container:hover .cert-unfold-info {
@@ -1491,7 +1482,6 @@ body {
     --secondary-bg-rgb: 30, 30, 30; /* Dark mode secondary bg */
 }
 
-/* Sembunyikan tombol secara default (Desktop) */
 .cert-show-more-container {
     display: none;
     justify-content: center;
@@ -1518,7 +1508,7 @@ body {
         left: auto !important;
         right: auto !important;
         width: 320px;
-        margin-bottom: 120px; /* Ruang untuk info popup */
+        margin-bottom: 120px;
     }
     
     .cert-unfold-info {
@@ -1539,8 +1529,59 @@ body {
     .show-all-certs .hidden-cert {
         display: flex !important;
     }
-    /* Sembunyikan kartu yang punya class hidden-cert */
     .hidden-cert {
         display: none !important;
+    }
+}
+
+// service section
+.service-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.service-container .service-item {
+    background-color: var(--secondary-bg);
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center; /* Kartu berada di tengah */
+}
+.service-item .service-card {
+    background: var(--card-bg);
+    flex: 1 1 calc(33.333% - 40px);
+    border-radius: 27px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.service-item .service-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 92, 158, 0.2);
+    border-color: var(--primary-color);
+}
+.service-item .service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.service-icon {
+    font-size: 2.5rem;
+    color: #f1c40f; /* Warna kuning seperti di gambar */
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .service-item .service-card {
+        flex: 1 1 100%; /* Satu kolom di layar kecil */
     }
 }
