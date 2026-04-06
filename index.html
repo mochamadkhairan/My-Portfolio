@@ -27,7 +27,7 @@
             
             <div class="nav-controls">
                 <button id="lang-toggle" class="control-btn">ID</button>
-                <button id="theme-toggle" class="control-btn">🌙 Dark Mode</button>
+                <button id="theme-toggle" class="toggle-darkmode control-btn">🌙 Dark Mode</button>
             </div>
         </div>
     </nav>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="hero-footer">
                     <div class="social-box">
-                        <p>FIND ME?</p>
+                        <p class="find-me">FIND ME?</p>
                         <div class="icons">
                             <a href="https://www.facebook.com/khairan.mochamad.1" target="_blank"><i class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com//m.khairan22" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="skill-box">
-                        <p>BEST SKILL ON</p>
+                        <p class="best-skill">BEST SKILL ON</p>
                         <div class="icons">
                             <span><i class="fas fa-cogs"></i></span>
                             <span><i class="fas fa-laptop-code"></i></span>
@@ -78,47 +78,47 @@
 
     <section class="section" id="service">
         <div class="service-container">
-            <h2 class="section-title reveal" id="title-service">What I <span class="highlight">Offer</span></h2>
-            <p class="section-desc reveal" style="text-align: center; margin-bottom: 40px;">A range of services to help you establish a strong digital presence.</p>
+            <h2 class="title-service section-title reveal">What I <span class="highlight">Offer</span></h2>
+            <p class="service-desc section-desc reveal" style="text-align: center; margin-bottom: 40px;">A range of services to help you establish a strong digital presence.</p>
             <div class="service-item">
                 <div class="service-card reveal">
                     <i class="fas fa-laptop-code service-icon"></i>
-                    <h3>Web Development</h3>
-                    <p>Building responsive, user-friendly websites using modern technologies like Laravel and Tailwind CSS.</p>
+                    <h3 class="srv-web-title">Web Development</h3>
+                    <p class="srv-web-desc">Building responsive, user-friendly websites using modern technologies like Laravel and Tailwind CSS.</p>
                 </div>
 
                 <div class="service-card reveal">
                     <i class="fas fa-mobile-alt service-icon"></i>
-                    <h3>Mobile App Development</h3>
-                    <p>Creating cross-platform mobile applications with Flutter that provide seamless user experiences.</p>
+                    <h3 class="srv-mob-title">Mobile App Development</h3>
+                    <p class="srv-mob-desc">Creating cross-platform mobile applications with Flutter that provide seamless user experiences.</p>
                 </div>
 
                 <div class="service-card reveal">
                     <i class="fas fa-paint-brush service-icon"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing intuitive interfaces and engaging user experiences that align with your brand identity.</p>
+                    <h3 class="srv-ui-title">UI/UX Design</h3>
+                    <p class="srv-ui-desc">Designing intuitive interfaces and engaging user experiences that align with your brand identity.</p>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-cogs service-icon"></i>
-                    <h3>Maintenance Websites</h3>
-                    <p>Providing ongoing support and updates to keep your website running smoothly and up-to-date.</p>
+                    <h3 class="srv-maint-title">Maintenance Websites</h3>
+                    <p class="srv-maint-desc">Providing ongoing support and updates to keep your website running smoothly and up-to-date.</p>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-puzzle-piece service-icon"></i>
-                    <h3>Dynamic Web Applications</h3>
-                    <p>Building interactive and feature-rich web applications that provide an exceptional user experience.</p>
+                    <h3 class="srv-dyn-title">Dynamic Web Applications</h3>
+                    <p class="srv-dyn-desc">Building interactive and feature-rich web applications that provide an exceptional user experience.</p>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-building service-icon"></i>
-                    <h3>Company Profile Websites</h3>
-                    <p>Creating compelling online presences that showcase your brand and engage your target audience.</p>
+                    <h3 class="srv-comp-title">Company Profile Websites</h3>
+                    <p class="srv-comp-desc">Creating compelling online presences that showcase your brand and engage your target audience.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title reveal" id="title-portfolio">My <span class="highlight">Portfolio</span></h2>
+        <h2 class="title-portfolio section-title reveal">My <span class="highlight">Portfolio</span></h2>
         <div class="project-grid" id="projectGrid">
             <div class="project-card reveal" onclick="openLightbox('Project Absensi', ['aset/home-absensi.png', 'aset/absensi-detail.png', 'aset/absensi-detail1.png', 'aset/absensi-detail2.png'])">
                 <div class="project-img">
@@ -130,7 +130,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>Laravel</span><span>MySQL</span><span>TailWindCSS</span></div>
                     <h3>MagangTrack</h3>
-                    <p>MagangTrack is a web-based internship management system designed to simplify the process of managing internships within a company.</p>
+                    <p class="proj-magang-desc">MagangTrack is a web-based internship management system designed to simplify the process of managing internships within a company.</p>
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>Laravel</span><span>MySQL</span><span>TailWindCSS</span></div>
                     <h3>Pick It Up</h3>
-                    <p>PickitUp is a web-based guitar learning platform designed to help users learn guitar through interactive lessons, practice videos, quizzes, and guided exercises.</p>
+                    <p class="proj-pick-desc">PickitUp is a web-based guitar learning platform designed to help users learn guitar through interactive lessons, practice videos, quizzes, and guided exercises.</p>
                 </div>
             </div>
             <div class="project-card reveal" onclick="openLightbox('Tuturaja', ['aset/home-tuturaja.png', 'aset/tuturaja-detail.png', 'aset/tuturaja-detail1.png', 'aset/tuturaja-detail2.png'])">
@@ -157,7 +157,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>Flutter</span><span>Dart</span><span>JSON</span></div>
                     <h3>Tutur Aja</h3>
-                    <p>Tutur Aja is a mobile application built with Flutter that allows users to easily report complaints, issues, and suggestions to the relevant authorities.</p>
+                    <p class="proj-tutur-desc">Tutur Aja is a mobile application built with Flutter that allows users to easily report complaints, issues, and suggestions to the relevant authorities.</p>
                 </div>
             </div>
             <div class="project-card reveal" onclick="openLightbox('Bandung Creative HUB Website', ['aset/home-bch.png', 'aset/about-bch.png', 'aset/artikel-bch.png', 'aset/dashboard-admin.png'])">
@@ -170,7 +170,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>Laravel</span><span>MySQL</span><span>TailWindCSS</span></div>
                     <h3>Bandung Creative HUB Website</h3>
-                    <p>BCH Website is a web-based platform designed to manage facilities and spaces at Bandung Creative Hub, allowing users to explore available rooms and administrators to manage bookings and facility data through an integrated dashboard.</p>
+                    <p class="proj-bch-desc">BCH Website is a web-based platform designed to manage facilities and spaces at Bandung Creative Hub, allowing users to explore available rooms and administrators to manage bookings and facility data through an integrated dashboard.</p>
                 </div>
             </div>
             <div class="project-card reveal" onclick="openLightbox('Warung Gurangseng Website', ['aset/warseng1.png', 'aset/warseng2.png', 'aset/warseng3.png', 'aset/warseng4.png'])">
@@ -183,7 +183,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
                     <h3>Statis Website - Warung Gurangseng</h3>
-                    <p>The Warung Gurangseng website is a simple company profile website that displays information about the food stall, the available menu, and a visual depiction of the business premises.</p>
+                    <p class="proj-warseng-desc">The Warung Gurangseng website is a simple company profile website that displays information about the food stall, the available menu, and a visual depiction of the business premises.</p>
                 </div>
             </div>
             <div class="project-card reveal" onclick="openLightbox('Warung Gurangseng Website', ['aset/website-slider.png'])">
@@ -196,7 +196,7 @@
                 <div class="project-info">
                     <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
                     <h3>Statis Website Slider</h3>
-                    <p>An interactive landing page project featuring a collection of Mobile Legends Heroes with modern design, smooth transition animations, and premium features.</p>
+                    <p class="proj-slider-desc">An interactive landing page project featuring a collection of Mobile Legends Heroes with modern design, smooth transition animations, and premium features.</p>
                 </div>
             </div>
 
@@ -219,8 +219,8 @@
     </div>
 
     <section id="skills" class="section">
-        <h2 class="section-title reveal" id="title-skills">Technical <span class="highlight">Skills</span></h2>
-        <p class="section-desc reveal lang-skills-desc" style="text-align: center; margin-bottom: 40px;">The tools, languages, and frameworks I use to bring ideas to life.</p>
+        <h2 class="title-skills section-title reveal">Technical <span class="highlight">Skills</span></h2>
+        <p class="lang-skills-desc section-desc reveal" style="text-align: center; margin-bottom: 40px;">The tools, languages, and frameworks I use to bring ideas to life.</p>
 
         <div class="skills-wrapper">
             <div class="skill-category reveal">
@@ -264,7 +264,7 @@
                 <div class="about-img-side reveal-left">
                     <div class="experience-badge">
                         <span class="num">2+</span>
-                        <span class="text">Years of<br>Experience</span>
+                        <span class="exp-badge-text text">Years of<br>Experience</span>
                     </div>
                     <div class="img-container">
                         <img src="aset/mypoto2.jpeg" alt="Khay Foto">
@@ -274,8 +274,8 @@
 
                 <div class="about-content-side">
                     <h2 class="section-subtitle reveal">MY BIOGRAPHY</h2>
-                    <h1 class="section-title reveal" id="title-about">Want to Know <span class="highlight">More About Me</span>?</h1>
-                    <p class="about-desc reveal">
+                    <h1 class="title-about section-title reveal">Want to Know <span class="highlight">More About Me</span>?</h1>
+                    <p class="about-desc-text about-desc reveal">
                     I am a passionate Software Developer dedicated to building digital solutions that are not only highly functional but also visually engaging. 
                     Based in Indonesia, I combine technical expertise with thoughtful design to create seamless user experiences and help businesses establish a strong presence in the digital world.
                     </p>
@@ -298,11 +298,11 @@
                     <div class="stats-grid reveal-right">
                         <div class="stat-card">
                             <h3>5+</h3>
-                            <p>Projects Done</p>
+                            <p class="stat-proj">Projects Done</p>
                         </div>
                         <div class="stat-card">
                             <h3>1000+</h3>
-                            <p>Hours of Coding</p>
+                            <p class="stat-code">Hours of Coding</p>
                         </div>
                     </div>
                 </div>
@@ -311,113 +311,113 @@
     </section>
 
     <section id="certificates" class="section">
-        <h2 class="section-title reveal" id="title-certs">My <span class="highlight">Achievements</span></h2>
+        <h2 class="title-certs section-title reveal">My <span class="highlight">Achievements</span></h2>
         <p class="section-subtitle reveal lang-certs-desc" style="text-align: center; margin-bottom: 80px;">Professional certifications and recognitions I've earned.</p>
 
         <div class="cert-canvas-container reveal">
             <div class="cert-canvas" id="certCanvas">
                 
-                <div class="cert-glass-item cert-item-1" onclick="openLightbox('Laravel Kompetensi', ['aset/certif1.jpg'])">
+                <div class="cert-glass-item cert-item-1" onclick="openLightbox('My Certificate', ['aset/certif1.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif1.jpg" alt="Laravel Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Business & Competition</span>
-                        <h3>Best Participant: The 7th Ambassador of Business Edupreneur</h3>
-                        <p class="cert-date">Date Issued: <b>May 2, 2019</b></p>
-                        <p class="cert-issuer">Issued by: <b>Universitas Pendidikan Indonesia (UPI)</b></p>
+                        <span class="cert-tag tag-bus-comp">Business & Competition</span>
+                        <h3 class="cert-title-1">Best Participant: The 7th Ambassador of Business Edupreneur</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-1">May 2, 2019</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>Universitas Pendidikan Indonesia (UPI)</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-2" onclick="openLightbox('Mobile Expert', ['aset/certif2.jpg'])">
+                <div class="cert-glass-item cert-item-2" onclick="openLightbox('My Certificate', ['aset/certif2.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif2.jpg" alt="Flutter Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Organizing Committee</span>
-                        <h3>Committee Member: Career Day IDE LPKIA 2026</h3>
-                        <p class="cert-date">Date Issued: <b>January 24, 2026</b></p>
-                        <p class="cert-issuer">Issued by: <b>IDE LPKIA Digital Economy Institute</b></p>
+                        <span class="cert-tag tag-committee">Organizing Committee</span>
+                        <h3 class="cert-title-2">Committee Member: Career Day IDE LPKIA 2026</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-2">January 24, 2026</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>IDE LPKIA Digital Economy Institute</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-3" onclick="openLightbox('UI/UX Design', ['aset/certif3.png'])">
+                <div class="cert-glass-item cert-item-3" onclick="openLightbox('My Certificate', ['aset/certif3.png'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif3.png" alt="UI/UX Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Entrepreneurship</span>
-                        <h3>Participant: 2025 Student Entrepreneurship Development Program (P2MW)</h3>
-                        <p class="cert-date">Date Issued: <b>August 2025</b></p>
-                        <p class="cert-issuer">Issued by: <b>PIB IDE LPKIA</b></p>
+                        <span class="cert-tag tag-entrep">Entrepreneurship</span>
+                        <h3 class="cert-title-3">Participant: 2025 Student Entrepreneurship Development Program (P2MW)</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-3">August 2025</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>PIB IDE LPKIA</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-4 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/certif4.jpg'])">
+                <div class="cert-glass-item cert-item-4 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif4.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif4.jpg" alt="Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Academic Competition</span>
-                        <h3>2nd Place: Speech Competition</h3>
-                        <p class="cert-date">Date Issued: <b>January 20, 2025</b></p>
-                        <p class="cert-issuer">Issued by: <b>HIMA AKSI IDE LPKIA Bandung</b></p>
+                        <span class="cert-tag tag-acad-comp">Academic Competition</span>
+                        <h3 class="cert-title-4">2nd Place: Speech Competition</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-4">January 20, 2025</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>HIMA AKSI IDE LPKIA Bandung</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-5 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/certif5.jpg'])">
+                <div class="cert-glass-item cert-item-5 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif5.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif5.jpg" alt="Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Sports (Martial Arts)</span>
-                        <h3>2nd Place: Pencak Silat (Senior High Category) Bandung Lautan Api Championship 2</h3>
-                        <p class="cert-date">Date Issued: <b>Nov 9-10, 2019</b></p>
-                        <p class="cert-issuer">Issued by: <b>Sayap Rajawali & Ministry of Youth and Sports RI</b></p>
+                        <span class="cert-tag tag-sports">Sports (Martial Arts)</span>
+                        <h3 class="cert-title-5">2nd Place: Pencak Silat (Senior High Category) Bandung Lautan Api Championship 2</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-5">Nov 9-10, 2019</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>Sayap Rajawali & Ministry of Youth and Sports RI</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/certif6.jpg'])">
+                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif6.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif6.jpg" alt="Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Information Technology</span>
-                        <h3>Participant: IF DAY</h3>
-                        <p class="cert-date">Date Issued: <b>March 22, 2025</b></p>
-                        <p class="cert-issuer">Issued by: <b>Informatics Engineering Study Program, IDE LPKIA</b></p>
+                        <span class="cert-tag tag-it">Information Technology</span>
+                        <h3 class="cert-title-6">Participant: IF DAY</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-6">March 22, 2025</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>Informatics Engineering Study Program, IDE LPKIA</b></p>
                     </div>
                 </div>
 
-                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/certif7.jpg'])">
+                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif7.jpg'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif7.jpg" alt="Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Technology Seminar</span>
-                        <h3>Participant: "Programming Transformation with AI" Seminar</h3>
-                        <p class="cert-date">Date Issued: <b>July 10, 2024</b></p>
-                        <p class="cert-issuer">Issued by: <b>Informatics Engineering Student Association, IDE LPKIA</b></p>
+                        <span class="cert-tag tag-tech-seminar">Technology Seminar</span>
+                        <h3 class="cert-title-7">Participant: "Programming Transformation with AI" Seminar</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-7">July 10, 2024</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>Informatics Engineering Student Association, IDE LPKIA</b></p>
                     </div>
                 </div>
                 
-                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('Sertifikat Baru', ['aset/certif8.png'])">
+                <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif8.png'])">
                     <div class="cert-glass-paper">
                         <img src="aset/certif8.png" alt="Certificate">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
-                        <span class="cert-tag">Accounting & Finance</span>
-                        <h3>Participant: FAC (Fun Accounting Club)</h3>
-                        <p class="cert-date">Date Issued: <b>November 19, 2023</b></p>
-                        <p class="cert-issuer">Issued by: <b>Accounting Study Program Student Association, LPKIA</b></p>
+                        <span class="cert-tag tag-acc-fin">Accounting & Finance</span>
+                        <h3 class="cert-title-8">Participant: FAC (Fun Accounting Club)</h3>
+                        <p class="cert-date"><span class="cert-date-label">Date Issued: </span><b class="date-cert-8">November 19, 2023</b></p>
+                        <p class="cert-issuer"><span class="cert-issuer-label">Issued by: </span><b>Accounting Study Program Student Association, LPKIA</b></p>
                     </div>
                 </div>
 
@@ -425,14 +425,14 @@
         </div>
         <div class="cert-show-more-container">
             <button id="btnShowMoreCert" class="btn-show-more">
-                <span id="textShowMoreCert">Show More</span>
+                <span class="textShowMoreCert" id="textShowMoreCert">Show More</span>
                 <i class="fas fa-chevron-down"></i>
             </button>
         </div>
     </section>
 
     <section id="life" class="section">
-        <h2 class="section-title reveal" id="title-life">Life Beyond <span class="highlight">Coding</span></h2>
+        <h2 class="title-life section-title reveal">Life Beyond <span class="highlight">Coding</span></h2>
         <p class="section-subtitle reveal lang-life-desc" style="text-align: center; margin-bottom: 40px;">Hover the cards to explore my story.</p>
 
         <div class="interactive-hobbies-grid">
@@ -440,12 +440,12 @@
                 <div class="card-content">
                     <div class="card-icon"><i class="fas fa-guitar"></i></div>
                     <div class="card-details">
-                        <span class="activity-tag">Performer</span>
-                        <h3>Music & Stage</h3>
-                        <p>Active guitarist. 5+ stage performances and music production enthusiast.</p>
+                        <span class="tag-performer activity-tag">Performer</span>
+                        <h3 class="life-music-title">Music & Stage</h3>
+                        <p class="life-music-desc">Active guitarist. 5+ stage performances and music production enthusiast.</p>
                     </div>
                     <div class="card-footer">
-                        <span>Click to see gallery</span>
+                        <span class="life-music-foot">Click to see gallery</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -456,12 +456,12 @@
                 <div class="card-content">
                     <div class="card-icon"><i class="fas fa-camera"></i></div>
                     <div class="card-details">
-                        <span class="activity-tag">Creator</span>
-                        <h3>Content Creator</h3>
-                        <p>Capturing life through lenses. Experience in event documentation and editing.</p>
+                        <span class="tag-creator activity-tag">Creator</span>
+                        <h3 class="life-content-title">Content Creator</h3>
+                        <p class="life-content-desc">Capturing life through lenses. Experience in event documentation and editing.</p>
                     </div>
                     <div class="card-footer">
-                        <span>Explore works</span>
+                        <span class="life-content-foot">Explore works</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -472,12 +472,12 @@
                 <div class="card-content">
                     <div class="card-icon"><i class="fas fa-users"></i></div>
                     <div class="card-details">
-                        <span class="activity-tag">Leader</span>
-                        <h3>Organization</h3>
-                        <p>Leading tech communities and organizing campus workshops.</p>
+                        <span class="tag-leader activity-tag">Leader</span>
+                        <h3 class="life-org-title">Organization</h3>
+                        <p class="life-org-desc">Leading tech communities and organizing campus workshops.</p>
                     </div>
                     <div class="card-footer">
-                        <span>View activities</span>
+                        <span class="life-org-foot">View activities</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -487,25 +487,25 @@
     </section>
 
     <section id="contact" class="section">
-        <h2 class="section-title reveal" id="title-contact">Let's <span class="highlight">Connect</span></h2>
+        <h2 class="title-contact section-title reveal">Let's <span class="highlight">Connect</span></h2>
         
         <div class="contact-wrapper">
             <div class="contact-info-side reveal-left">
-                <h3>Contact Information</h3>
-                <p>Interested in working together? Feel free to reach out. I'm always open to discussing new projects and opportunities to bring your ideas to life.</p>
+                <h3 class="contact-info-title">Contact Information</h3>
+                <p class="contact-desc">Interested in working together? Feel free to reach out. I'm always open to discussing new projects and opportunities to bring your ideas to life.</p>
                 
                 <div class="info-details">
                     <div class="detail-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <span>Email Me</span>
+                            <span class="email-label">Email Me</span>
                             <p>moch.khairanathallah@gmail.com</p>
                         </div>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <span>Location</span>
+                            <span class="location-label">Location</span>
                             <p>Bandung, Indonesia</p>
                         </div>
                     </div>
@@ -516,8 +516,8 @@
                             <p>+62 878 7263 4316</p>
                             <a href="https://wa.me/6287872634316?text=Halo%20Khay,%20saya%20tertarik%20bekerja%20sama%20dengan%20anda"
                             target="_blank"
-                            class="wa-action-btn">
-                            Chat Sekarang <i class="fas fa-arrow-right"></i>
+                            class="wa-btn wa-action-btn">
+                            Chat Now! <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -526,7 +526,7 @@
 
             <div class="contact-container reveal-right">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <h1>Send a <span class="highlight">Message</span> Via <span class="highlight">Email</span></h1>
+                    <h1 class="form-title">Send a <span class="highlight">Message</span> Via <span class="highlight">Email</span></h1>
                     <input type="hidden" name="access_key" value="fff6bf40-7df9-4db4-aa90-9bb4ef19ffee">
 
                     <div class="input-group">
@@ -545,7 +545,7 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <button type="submit" class="btn-submit">
-                        <span>Kirim Pesan</span>
+                        <span class="form-submit-btn">Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
@@ -556,7 +556,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">Khay<span>.</span></div>
-            <p>© 2026 M.Khairan. Built with ❤️ and Clean Code.</p>
+            <p class="footer-copyright">© 2026 M.Khairan. Built with ❤️</p>
             <div class="footer-socials">
                 <a href="https://www.instagram.com//m.khairan22" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/khairan-mochamad-150117371" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -723,29 +723,170 @@ const langToggle = document.getElementById("lang-toggle");
 let currentLang = "en";
 
 const translations = {
+    // === HERO SECTION ===
+    "logo": { id: "Saya <span>Khay</span>", en: "It's <span>Khay</span>" },
     "welcome-text": { id: "SELAMAT DATANG DI DUNIA SAYA", en: "WELCOME TO MY WORLD" },
+    "hero-title": { id: "Hai, Saya <span class='highlight'>Khay</span><br>seorang <span class='highlight' id='typing-text'>Software Developer</span><br><span class='sub-text'>Berasal dari Indonesia.</span>", en: "Hi, I’m <span class='highlight'>Khay</span><br>a <span class='highlight' id='typing-text'>Software Developer</span><br><span class='sub-text'>Based in Indonesia.</span>" },
     "description": { id: "Membangun situs web modern yang cepat, fungsional, dan dirancang untuk memberikan pengalaman pengguna terbaik. Saya membantu bisnis dan merek pribadi untuk tampil lebih profesional di dunia digital.", en: "Building modern websites that are fast, functional, and designed to deliver the best user experience. I help businesses and personal brands present themselves more professionally in the digital world." },
     "btn-about": { id: "Tentang Saya", en: "About Me" },
     "btn-cta": { id: "Mari buat website Anda!", en: "Let's make your website!" },
-    "hero-title": { id: "Hai, Saya <span class='highlight'>Khay</span><br>seorang <span class='highlight'>Software Developer</span><br><span class='sub-text'>Berasal dari Indonesia.</span>", en: "Hi, I’m <span class='highlight'>Khay</span><br>a <span class='highlight'>Software Developer</span><br><span class='sub-text'>Based in Indonesia.</span>" },
+    "find-me": { id: "TEMUKAN SAYA?", en: "FIND ME?" },
+    "best-skill": { id: "KEAHLIAN TERBAIK", en: "BEST SKILL ON" },
+    "toggle-darkmode": { id: "🌙 Mode Gelap", en: "🌙 Dark Mode" },
+
+    // === SERVICE SECTION ===
+    "title-service": { id: "Apa yang Saya <span class='highlight'>Tawarkan</span>", en: "What I <span class='highlight'>Offer</span>" },
+    "service-desc": { id: "Berbagai layanan untuk membantu Anda membangun kehadiran digital yang kuat.", en: "A range of services to help you establish a strong digital presence." },
+    "srv-web-title": { id: "Pengembangan Web", en: "Web Development" },
+    "srv-web-desc": { id: "Membangun situs web yang responsif dan ramah pengguna menggunakan teknologi modern seperti Laravel dan Tailwind CSS.", en: "Building responsive, user-friendly websites using modern technologies like Laravel and Tailwind CSS." },
+    "srv-mob-title": { id: "Pengembangan Aplikasi Mobile", en: "Mobile App Development" },
+    "srv-mob-desc": { id: "Membuat aplikasi mobile lintas platform dengan Flutter yang memberikan pengalaman pengguna yang mulus.", en: "Creating cross-platform mobile applications with Flutter that provide seamless user experiences." },
+    "srv-ui-title": { id: "Desain UI/UX", en: "UI/UX Design" },
+    "srv-ui-desc": { id: "Merancang antarmuka yang intuitif dan pengalaman pengguna yang menarik yang selaras dengan identitas merek Anda.", en: "Designing intuitive interfaces and engaging user experiences that align with your brand identity." },
+    "srv-maint-title": { id: "Pemeliharaan Website", en: "Maintenance Websites" },
+    "srv-maint-desc": { id: "Memberikan dukungan dan pembaruan berkelanjutan untuk menjaga situs web Anda berjalan lancar dan selalu terbaru.", en: "Providing ongoing support and updates to keep your website running smoothly and up-to-date." },
+    "srv-dyn-title": { id: "Aplikasi Web Dinamis", en: "Dynamic Web Applications" },
+    "srv-dyn-desc": { id: "Membangun aplikasi web interaktif dan kaya fitur yang memberikan pengalaman pengguna yang luar biasa.", en: "Building interactive and feature-rich web applications that provide an exceptional user experience." },
+    "srv-comp-title": { id: "Website Profil Perusahaan", en: "Company Profile Websites" },
+    "srv-comp-desc": { id: "Menciptakan kehadiran online yang menarik untuk memamerkan merek Anda dan melibatkan audiens target Anda.", en: "Creating compelling online presences that showcase your brand and engage your target audience." },
+
+    // === PORTFOLIO SECTION ===
     "title-portfolio": { id: "Portofolio <span class='highlight'>Saya</span>", en: "My <span class='highlight'>Portfolio</span>" },
-    "title-about": { id: "Ingin Tahu <span class='highlight'>Lebih Banyak Tentang Saya</span>?", en: "Want to Know <span class='highlight'>More About Me</span>?" },
-    "title-hobbies": { id: "Hobi & <span class='highlight'>Minat</span>", en: "Hobbies & <span class='highlight'>Interests</span>" },
-    "title-contact": { id: "Mari <span class='highlight'>Terhubung</span>", en: "Let's <span class='highlight'>Connect</span>" },
-    "logo": { id: "ini <span>Khay</span>", en: "It's <span>Khay</span>" },
-    "section-subtitle": { id: "BIOGRAFI SAYA", en: "MY BIOGRAPHY" },
+    "proj-magang-desc": { id: "MagangTrack adalah sistem manajemen magang berbasis web yang dirancang untuk menyederhanakan proses pengelolaan magang di dalam sebuah perusahaan.", en: "MagangTrack is a web-based internship management system designed to simplify the process of managing internships within a company." },
+    "proj-pick-desc": { id: "PickitUp adalah platform belajar gitar berbasis web yang dirancang untuk membantu pengguna belajar gitar melalui pelajaran interaktif, video latihan, kuis, dan latihan terpandu.", en: "PickitUp is a web-based guitar learning platform designed to help users learn guitar through interactive lessons, practice videos, quizzes, and guided exercises." },
+    "proj-tutur-desc": { id: "Tutur Aja adalah aplikasi seluler yang dibangun dengan Flutter yang memungkinkan pengguna untuk dengan mudah melaporkan keluhan, masalah, dan saran kepada pihak berwenang terkait.", en: "Tutur Aja is a mobile application built with Flutter that allows users to easily report complaints, issues, and suggestions to the relevant authorities." },
+    "proj-bch-desc": { id: "BCH Website adalah platform berbasis web yang dirancang untuk mengelola fasilitas dan ruang di Bandung Creative Hub, memungkinkan pengguna menjelajahi ruangan dan admin mengelola data.", en: "BCH Website is a web-based platform designed to manage facilities and spaces at Bandung Creative Hub, allowing users to explore available rooms and administrators to manage bookings and facility data through an integrated dashboard." },
+    "proj-warseng-desc": { id: "Website Warung Gurangseng adalah situs profil perusahaan sederhana yang menampilkan informasi tentang kedai makanan, menu yang tersedia, dan gambaran visual tempat usaha.", en: "The Warung Gurangseng website is a simple company profile website that displays information about the food stall, the available menu, and a visual depiction of the business premises." },
+    "proj-slider-desc": { id: "Proyek landing page interaktif yang menampilkan koleksi Hero Mobile Legends dengan desain modern, animasi transisi yang halus, dan fitur premium.", en: "An interactive landing page project featuring a collection of Mobile Legends Heroes with modern design, smooth transition animations, and premium features." },
+    "textShowMore": { id: "Tampilkan Lebih Banyak", en: "Show More" },
+
+    // === SKILLS SECTION ===
     "title-skills": { id: "Keahlian <span class='highlight'>Teknis</span>", en: "Technical <span class='highlight'>Skills</span>" },
-    "lang-skills-desc": {
-        id: "Bahasa pemrograman, framework, dan alat yang saya gunakan untuk mewujudkan ide.", 
-        en: "The tools, languages, and frameworks I use to bring ideas to life." 
-    },
+    "lang-skills-desc": { id: "Bahasa pemrograman, framework, dan alat yang saya gunakan untuk mewujudkan ide.", en: "The tools, languages, and frameworks I use to bring ideas to life." },
     "lang-skill-cat1": { id: "Bahasa Pemrograman", en: "Programming Languages" },
     "lang-skill-cat2": { id: "Framework & Perpustakaan", en: "Frameworks & Libraries" },
-    "lang-skill-cat3": { id: "Basis Data & Alat", en: "Databases & Tools" },
-    "textShowMore": { id: "Tampilkan Lebih Banyak", en: "Show More" },
-    "title-certs": { id: "Prestasi & <span class='highlight'>Sertifikat</span>", en: "Achievements & <span class='highlight'>Certificates</span>" },
+    "lang-skill-cat3": { id: "Alat & Basis Data", en: "Tools & Databases" },
+
+    // === ABOUT SECTION ===
+    "section-subtitle": { id: "BIOGRAFI SAYA", en: "MY BIOGRAPHY" },
+    "title-about": { id: "Ingin Tahu <span class='highlight'>Lebih Banyak Tentang Saya</span>?", en: "Want to Know <span class='highlight'>More About Me</span>?" },
+    "about-desc-text": { id: "Saya adalah seorang Software Developer yang bersemangat, berdedikasi untuk membangun solusi digital yang tidak hanya sangat fungsional tetapi juga menarik secara visual. Berbasis di Indonesia, saya menggabungkan keahlian teknis dengan desain yang cermat untuk menciptakan pengalaman pengguna yang mulus dan membantu bisnis membangun kehadiran yang kuat di dunia digital.", en: "I am a passionate Software Developer dedicated to building digital solutions that are not only highly functional but also visually engaging. Based in Indonesia, I combine technical expertise with thoughtful design to create seamless user experiences and help businesses establish a strong presence in the digital world." },
+    "exp-badge-text": { id: "Tahun<br>Pengalaman", en: "Years of<br>Experience" },
+    "stat-proj": { id: "Proyek Selesai", en: "Projects Done" },
+    "stat-code": { id: "Jam Coding", en: "Hours of Coding" },
+
+    // === CERTIFICATES SECTION ===
+    "title-certs": { id: "Prestasi <span class='highlight'>Saya</span>", en: "My <span class='highlight'>Achievements</span>" },
     "lang-certs-desc": { id: "Sertifikasi profesional dan penghargaan yang telah saya raih.", en: "Professional certifications and recognitions I've earned." },
-    "lang-life-desc": { id: "Hover kartu untuk menjelajahi cerita saya.", en: "Hover the cards to explore my story." }
+    "textShowMoreCert": { id: "Tampilkan Lebih Banyak", en: "Show More" },
+
+    // === CERTIFICATES ===
+
+    // Tags
+    "tag-bus-comp": { id: "Bisnis & Kompetisi", en: "Business & Competition" },
+    "tag-committee": { id: "Panitia Penyelenggara", en: "Organizing Committee" },
+    "tag-entrep": { id: "Kewirausahaan", en: "Entrepreneurship" },
+    "tag-acad-comp": { id: "Kompetisi Akademik", en: "Academic Competition" },
+    "tag-sports": { id: "Olahraga (Bela Diri)", en: "Sports (Martial Arts)" },
+    "tag-it": { id: "Teknologi Informasi", en: "Information Technology" },
+    "tag-tech-seminar": { id: "Seminar Teknologi", en: "Technology Seminar" },
+    "tag-acc-fin": { id: "Akuntansi & Keuangan", en: "Accounting & Finance" },
+
+    // Certificate Titles
+    "cert-title-1": { id: "Peserta Terbaik: The 7th Ambassador of Business Edupreneur", en: "Best Participant: The 7th Ambassador of Business Edupreneur" },
+    "cert-title-2": { id: "Anggota Panitia: Career Day IDE LPKIA 2026", en: "Committee Member: Career Day IDE LPKIA 2026" },
+    "cert-title-3": { id: "Peserta: Program Pengembangan Mahasiswa Wirausaha (P2MW) 2025", en: "Participant: 2025 Student Entrepreneurship Development Program (P2MW)" },
+    "cert-title-4": { id: "Juara 2: Lomba Pidato (Speech Competition)", en: "2nd Place: Speech Competition" },
+    "cert-title-5": { id: "Juara 2: Pencak Silat (Kategori SMA) Bandung Lautan Api Championship 2", en: "2nd Place: Pencak Silat (Senior High Category) Bandung Lautan Api Championship 2" },
+    "cert-title-6": { id: "Peserta: IF DAY", en: "Participant: IF DAY" },
+    "cert-title-7": { id: "Peserta: Seminar 'Programming Transformation with AI'", en: "Participant: 'Programming Transformation with AI' Seminar" },
+    "cert-title-8": { id: "Peserta: FAC (Fun Accounting Club)", en: "Participant: FAC (Fun Accounting Club)" },
+
+    // Common Labels
+    "cert-date-label": { id: "Tanggal Terbit: ", en: "Date Issued: " },
+    "cert-issuer-label": { id: "Diterbitkan oleh: ", en: "Issued by: " },
+
+    // Specific Months/Dates (If needed for full localization)
+    "date-cert-1": { id: "2 Mei 2019", en: "May 2, 2019" },
+    "date-cert-2": { id: "24 Januari 2026", en: "January 24, 2026" },
+    "date-cert-3": { id: "Agustus 2025", en: "August 2025" },
+    "date-cert-4": { id: "20 Januari 2025", en: "January 20, 2025" },
+    "date-cert-5": { id: "9-10 Nov 2019", en: "Nov 9-10, 2019" },
+    "date-cert-6": { id: "22 Maret 2025", en: "March 22, 2025" },
+    "date-cert-7": { id: "10 Juli 2024", en: "July 10, 2024" },
+    "date-cert-8": { id: "19 November 2023", en: "November 19, 2023" },
+
+    // === LIFE BEYOND CODING SECTION ===
+    "title-life": { id: "Kehidupan di Luar <span class='highlight'>Coding</span>", en: "Life Beyond <span class='highlight'>Coding</span>" },
+    "lang-life-desc": { id: "Hover kartu untuk menjelajahi cerita saya.", en: "Hover the cards to explore my story." },
+    "life-music-title": { id: "Musik & Panggung", en: "Music & Stage" },
+    "life-music-desc": { id: "Gitaris aktif. 5+ penampilan panggung dan antusias produksi musik.", en: "Active guitarist. 5+ stage performances and music production enthusiast." },
+    "life-music-foot": { id: "Klik untuk melihat galeri", en: "Click to see gallery" },
+    "life-content-title": { id: "Kreator Konten", en: "Content Creator" },
+    "life-content-desc": { id: "Mengabadikan momen melalui lensa. Berpengalaman dalam dokumentasi acara dan editing.", en: "Capturing life through lenses. Experience in event documentation and editing." },
+    "life-content-foot": { id: "Jelajahi karya", en: "Explore works" },
+    "life-org-title": { id: "Organisasi", en: "Organization" },
+    "life-org-desc": { id: "Memimpin komunitas teknologi dan menyelenggarakan workshop kampus.", en: "Leading tech communities and organizing campus workshops." },
+    "life-org-foot": { id: "Lihat aktivitas", en: "View activities" },
+
+    // === FOOTER/CONTACT ===
+    "title-contact": { id: "Mari <span class='highlight'>Terhubung</span>", en: "Let's <span class='highlight'>Connect</span>" },
+    "contact-info-title": {
+        id: "Informasi Kontak",
+        en: "Contact Information"
+    },
+    "contact-desc": {
+        id: "Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk mendiskusikan proyek baru dan peluang untuk mewujudkan ide Anda.",
+        en: "Interested in working together? Feel free to reach out. I'm always open to discussing new projects and opportunities to bring your ideas to life."
+    },
+    "email-label": {
+        id: "Email Saya",
+        en: "Email Me"
+    },
+    "location-label": {
+        id: "Lokasi",
+        en: "Location"
+    },
+    "wa-btn": {
+        id: "Chat Sekarang <i class='fas fa-arrow-right'></i>",
+        en: "Chat Now <i class='fas fa-arrow-right'></i>"
+    },
+    "form-title": {
+        id: "Kirim <span class='highlight'>Pesan</span> Via <span class='highlight'>Email</span>",
+        en: "Send a <span class='highlight'>Message</span> Via <span class='highlight'>Email</span>"
+    },
+    "form-name-placeholder": {
+        id: "Nama Anda",
+        en: "Your Name"
+    },
+    "form-email-placeholder": {
+        id: "Email Anda",
+        en: "Your Email"
+    },
+    "form-message-placeholder": {
+        id: "Pesan Anda...",
+        en: "Your Message..."
+    },
+    "form-submit-btn": {
+        id: "<span>Kirim Pesan</span> ",
+        en: "<span>Send Message</span> "
+    },
+    "footer-copyright": {
+        id: "© 2026 M.Khairan. Dibuat dengan ❤️",
+        en: "© 2026 M.Khairan. Built with ❤️"
+    },
+    "tag-creator": {
+        id: "Pencipta",
+        en: "Creator"
+    },
+    "tag-performer": {
+        id: "Pemeran",
+        en: "Performer"
+    },
+    "tag-leader": {
+        id: "Pemimpin",
+        en: "Leader"
+    }
 };
 
 langToggle.addEventListener("click", () => {
