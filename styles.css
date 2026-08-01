@@ -5,7 +5,7 @@
     --text-color: #333333;
     --text-muted: #666666;
     --nav-bg: rgba(255, 255, 255, 0.8);
-    --primary-color: #007bff;
+    --primary-color: #024082;
     --secondary-bg: linear-gradient(135deg, #e0eafc, #cfdef3);
     --border-color: #dddddd;
     --shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -17,7 +17,7 @@
     --text-color: #f1f1f1;
     --text-muted: #aaaaaa;
     --nav-bg: rgba(18, 18, 18, 0.8);
-    --primary-color: #3793ff;
+    --primary-color: #024082;
     --secondary-bg: linear-gradient(135deg, #1e1e2f, #232323);
     --border-color: #333333;
     --shadow: 0 10px 40px rgba(0,0,0,0.3);
@@ -310,7 +310,7 @@ body {
     margin-bottom: 20px;
     margin-top: -15px;
     padding: 15px 20px;
-    background: #04cc1b;
+    background: #02560c;
     color: white;
     border: none;
     border-radius: 25px;
@@ -322,7 +322,7 @@ body {
     transition: 0.3s;
     box-shadow: 0 10px 20px rgba(15, 59, 1, 0.1);
     background: white;
-    color: #04cc1b;
+    color: #02560c;
 }
 
 /* 4. PROJECTS & SECTIONS */
