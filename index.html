@@ -20,11 +20,26 @@
 
     <meta property="keywords" content="Software Developer, Web Development, Mobile App Development, UI/UX Design, Portfolio, Personal Website, Laravel, Flutter, Tailwind CSS, MySQL, Git, VS Code, Figma">
     <title>Personal Portfolio | Software & Full-Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Preload gambar hero (LCP element) supaya browser download-nya lebih awal -->
+    <link rel="preload" as="image" href="aset/pp.webp" fetchpriority="high">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Font Awesome & Devicon: di-load non-blocking (tidak menahan First Paint) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+    </noscript>
 </head>
 <body>
     <nav class="navbar">
@@ -86,7 +101,7 @@
 
             <div class="hero-image reveal-right">
                 <div class="image-bg-card">
-                    <img src="aset/pp.webp" height="500" width="400" alt="Khay Profile">
+                    <img src="aset/pp.webp" height="500" width="400" alt="Khay Profile" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </div>
@@ -138,7 +153,7 @@
         <div class="project-grid" id="projectGrid">
             <div class="project-card reveal" onclick="openLightbox('Project Absensi', ['aset/home-absensi.webp', 'aset/absensi-detail.webp', 'aset/absensi-detail1.webp', 'aset/absensi-detail2.webp'])">
                 <div class="project-img">
-                    <img src="aset/home-absensi.webp" alt="Absensi System">
+                    <img src="aset/home-absensi.webp" alt="Absensi System" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -152,7 +167,7 @@
 
             <div class="project-card reveal" onclick="openLightbox('Pick It Up', ['aset/home-pickitup.webp', 'aset/pickitup-detail.webp', 'aset/pickitup-detail1.webp', 'aset/pickitup-detail2.webp'])">
                 <div class="project-img">
-                    <img src="aset/home-pickitup.webp" alt="Pick It Up">
+                    <img src="aset/home-pickitup.webp" alt="Pick It Up" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -165,7 +180,7 @@
             </div>
             <div class="project-card reveal" onclick="openLightbox('Tuturaja', ['aset/home-tuturaja.webp', 'aset/tuturaja-detail.webp', 'aset/tuturaja-detail1.webp', 'aset/tuturaja-detail2.webp'])">
                 <div class="project-img">
-                    <img src="aset/home-tuturaja.webp" alt="Tuturaja">
+                    <img src="aset/home-tuturaja.webp" alt="Tuturaja" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -178,7 +193,7 @@
             </div>
             <div class="project-card reveal" onclick="openLightbox('Bandung Creative HUB Website', ['aset/home-bch.webp', 'aset/about-bch.webp', 'aset/artikel-bch.webp', 'aset/dashboard-admin.webp'])">
                 <div class="project-img">
-                    <img src="aset/home-bch.webp" alt="Bandung Creative HUB Website">
+                    <img src="aset/home-bch.webp" alt="Bandung Creative HUB Website" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -191,7 +206,7 @@
             </div>
             <div class="project-card reveal" onclick="openLightbox('Warung Gurangseng Website', ['aset/warseng.webp', 'aset/warseng2.webp', 'aset/warseng3.webp', 'aset/warseng4.webp'])">
                 <div class="project-img">
-                    <img src="aset/warseng.webp" alt="Warung Gurangseng Website">
+                    <img src="aset/warseng.webp" alt="Warung Gurangseng Website" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -204,7 +219,7 @@
             </div>
             <div class="project-card reveal" onclick="openLightbox('Warung Gurangseng Website', ['aset/website-slider.webp'])">
                 <div class="project-img">
-                    <img src="aset/website-slider.webp" alt="Website Slider">
+                    <img src="aset/website-slider.webp" alt="Website Slider" loading="lazy" decoding="async">
                     <div class="project-overlay">
                         <span class="view-btn"><i class="fas fa-search-plus"></i></span>
                     </div>
@@ -283,7 +298,7 @@
                         <span class="exp-badge-text text">Years of<br>Experience</span>
                     </div>
                     <div class="img-container">
-                        <img src="aset/pp2.webp" height="500" width="400" alt="Khay Foto">
+                        <img src="aset/pp2.webp" height="500" width="400" alt="Khay Foto" loading="lazy" decoding="async">
                     </div>
                     <div class="shape-blob"></div>
                 </div>
@@ -335,7 +350,7 @@
                 
                 <div class="cert-glass-item cert-item-1" onclick="openLightbox('My Certificate', ['aset/certif1.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif1.webp" alt="Laravel Certificate">
+                        <img src="aset/certif1.webp" alt="Laravel Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -348,7 +363,7 @@
 
                 <div class="cert-glass-item cert-item-2" onclick="openLightbox('My Certificate', ['aset/certif2.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif2.webp" alt="Flutter Certificate">
+                        <img src="aset/certif2.webp" alt="Flutter Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -361,7 +376,7 @@
 
                 <div class="cert-glass-item cert-item-3" onclick="openLightbox('My Certificate', ['aset/certif3.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif3.webp" alt="UI/UX Certificate">
+                        <img src="aset/certif3.webp" alt="UI/UX Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -374,7 +389,7 @@
 
                 <div class="cert-glass-item cert-item-4 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif4.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif4.webp" alt="Certificate">
+                        <img src="aset/certif4.webp" alt="Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -387,7 +402,7 @@
 
                 <div class="cert-glass-item cert-item-5 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif5.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif5.webp" alt="Certificate">
+                        <img src="aset/certif5.webp" alt="Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -400,7 +415,7 @@
 
                 <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif6.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif6.webp" alt="Certificate">
+                        <img src="aset/certif6.webp" alt="Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -413,7 +428,7 @@
 
                 <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif7.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif7.webp" alt="Certificate">
+                        <img src="aset/certif7.webp" alt="Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
@@ -426,7 +441,7 @@
                 
                 <div class="cert-glass-item cert-item-6 hidden-cert" onclick="openLightbox('My Certificate', ['aset/certif8.webp'])">
                     <div class="cert-glass-paper">
-                        <img src="aset/certif8.webp" alt="Certificate">
+                        <img src="aset/certif8.webp" alt="Certificate" loading="lazy" decoding="async">
                         <div class="cert-glass-badge"><i class="fas fa-award"></i></div>
                     </div>
                     <div class="cert-unfold-info">
