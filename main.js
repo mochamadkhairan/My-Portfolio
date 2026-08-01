@@ -62,21 +62,22 @@ document.addEventListener("DOMContentLoaded", type);
 function reveal() {
     const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
 
-    reveals.forEach((element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150; // Jarak muncul (pixel) sebelum elemen terlihat penuh
-
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add("active");
-        } else {
-            element.classList.remove("active");
-        }
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            } else {
+                entry.target.classList.remove("active");
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: "0px 0px -150px 0px", // Setara dengan elementVisible = 150 di versi lama
+        threshold: 0
     });
+
+    reveals.forEach((element) => revealObserver.observe(element));
 }
-
-
-window.addEventListener("scroll", reveal);
 
 document.addEventListener("DOMContentLoaded", reveal);
 
