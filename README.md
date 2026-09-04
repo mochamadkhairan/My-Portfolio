@@ -15,6 +15,7 @@ Selamat datang di repositori portofolio saya! Website ini dirancang untuk menamp
 -   **✉️ Contact Form Integration**: Terhubung langsung dengan Web3Forms untuk pengiriman pesan ke email.
 -   **💬 WhatsApp Quick Action**: Tombol akses cepat untuk komunikasi instan.
 -   **⚡ Performance Optimized**: Animasi *scroll-reveal* yang halus dan ringan.
+-   **📊 Vercel Web Analytics**: Integrated analytics tracking for visitor insights (auto-enabled when deployed on Vercel).
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -32,13 +33,31 @@ Ingin mencoba menjalankan proyek ini di komputer kamu?
 
 1. **Clone repositori ini**
    ```bash
-   git clone [https://github.com/mochamadkhairan/My-Portfolio.git](https://github.com/mochamadkhairan/My-Portfolio.git)
-Masuk ke direktori
+   git clone https://github.com/mochamadkhairan/My-Portfolio.git
+   ```
 
-Bash
-cd My-Portfolio
-Buka di Browser
-Cukup buka file index.html menggunakan browser pilihan Anda atau gunakan ekstensi Live Server di VS Code.
+2. **Masuk ke direktori**
+   ```bash
+   cd My-Portfolio
+   ```
+
+3. **Buka di Browser**
+   Cukup buka file `index.html` menggunakan browser pilihan Anda atau gunakan ekstensi Live Server di VS Code.
+
+## 📊 Enabling Vercel Web Analytics
+
+This project is configured to work with Vercel Web Analytics. To enable analytics tracking:
+
+1. **Deploy to Vercel**: Deploy your site to Vercel (if not already deployed)
+2. **Enable Analytics**: 
+   - Go to your Vercel dashboard
+   - Select your project
+   - Navigate to the "Analytics" tab in the sidebar
+   - Click the "Enable" button
+3. **Deploy**: After enabling, deploy your site (or wait for the next automatic deployment)
+4. **Verify**: Check your browser's Network tab for requests to `/_vercel/insights/*` to confirm analytics is working
+
+The analytics scripts are automatically injected by Vercel when deployed - no manual script tags needed!
 
 📸 **Tampilan Website**
 [![Preview Website Portofolio](aset/fullpage.webp)](https://mochamadkhairan.github.io/My-Portfolio/)
