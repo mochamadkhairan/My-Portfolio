@@ -22,7 +22,7 @@ toggleBtn.addEventListener('click', () => {
 });
 
 const textElement = document.getElementById("typing-text");
-const words = ["Web Developer.", "Fullstack Developer.", "Software Developer.", "UI/UX Designer."];
+const words = ["Website Developer.", "Fullstack Developer.", "Software Developer."];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
