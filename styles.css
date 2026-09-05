@@ -267,6 +267,22 @@ body {
     border-color: var(--primary-color);
     color: #fff;
 }
+.icons span:hover{
+    transform: translateY(-4px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(2, 64, 130, 0.25);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+.icons span:active{
+    transform: translateY(-4px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(2, 64, 130, 0.25);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
 .icons { display: flex; gap: 12px; }
 
 .icons a, .icons span {
