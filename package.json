@@ -1,0 +1,27 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Mochamad Khairan Athallah Sunandar - Software Developer",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochamadkhairan/My-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "vercel"
+  ],
+  "author": "Mochamad Khairan Athallah Sunandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochamadkhairan/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/mochamadkhairan/My-Portfolio#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
