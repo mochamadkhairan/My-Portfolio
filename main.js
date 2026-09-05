@@ -155,8 +155,8 @@ const translations = {
     "hero-title": { id: "Hai, Saya <span class='highlight'>Khay</span><br>seorang <span class='highlight' id='typing-text'>Software Developer</span><br><span class='sub-text'>Berasal dari Indonesia.</span>", en: "Hi, I’m <span class='highlight'>Khay</span><br>a <span class='highlight' id='typing-text'>Software Developer</span><br><span class='sub-text'>Based in Indonesia.</span>" },
     "description": { id: "Membangun situs web modern yang cepat, fungsional, dan dirancang untuk memberikan pengalaman pengguna terbaik. Saya membantu bisnis dan merek pribadi untuk tampil lebih profesional di dunia digital.", en: "Building modern websites that are fast, functional, and designed to deliver the best user experience. I help businesses and personal brands present themselves more professionally in the digital world." },
     "btn-about": { id: "Tentang Saya", en: "About Me" },
-    "btn-cta": { id: "Mari buat website Anda!", en: "Let's make your website!" },
-    "find-me": { id: "TEMUKAN SAYA?", en: "FIND ME?" },
+    "btn-cta": { id: "Cek Proyek Saya", en: "Check My Projects" },
+    "find-me": { id: "SOSIAL MEDIA SAYA", en: "MY SOCIAL MEDIA" },
     "best-skill": { id: "KEAHLIAN TERBAIK", en: "BEST SKILL ON" },
     "toggle-darkmode": { id: "🌙 Mode Gelap", en: "🌙 Dark Mode" },
 
